@@ -1,0 +1,36 @@
+/* .bg-dark {
+    background-color: #000000!important;
+} */
+
+a:visited{
+    color: white;
+}
+
+.jumbotron {
+    padding: 25px 25px 100px 25px;
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/28/09/16/dune-landscape-4886912_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1.display-3 {
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    font-variant-caps: petite-caps;
+    margin-bottom: 70px;
+}
+
+img.img-thumbnail {
+    border-radius: 50%;
+    image-rendering: auto;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    /* margin-left: 25px; */
+}
+
