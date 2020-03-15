@@ -43,6 +43,7 @@ img.img-thumbnail {
     background-color: #f5f5f5;
     display: block;
     margin-top: 6%;
+    font-size: 70%;
 }
 
 .container-fluid {
@@ -62,9 +63,20 @@ section.pageTitle {
 
 #cardSet {
 display: grid;
-margin-bottom: 6%;
+margin-bottom: 15%;
 }
 
 button {
-    margin-top: 25px;
+    margin-top: 20px;
 }
+
+#aboutMe {
+    display: block;
+    margin-bottom: 15%;
+}
+
+#cardSet section.col-sm-4 {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
