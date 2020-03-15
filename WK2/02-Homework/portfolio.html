@@ -37,8 +37,14 @@
         </section>
     </nav>
     <!-- End Nav -->
+
+    <!-- page title -->
+    <section class="pageTitle">
+        <h3>My Portfolio</h3>
+    </section class="pageTitle">
+
     <!-- grid is established, holds all information -->
-    <main class="container-fluid">
+    <main class="container" id="cardSet">
         <!-- first row is established -->
         <section class="row">
             <!-- first card is goes here -->
@@ -47,9 +53,11 @@
                     <img class="card-img-top" src="./Assets/IMGs/VCAT_Champion.jpg" alt="2016 VEX U World Champions">
                     <summary class="card-body">
                         <h5 class="card-title">2016 World Champions</h5>
-                        <p class="card-text">Terry in concert with his fellow collegues captures the elusive title,
+                        <p class="card-text">
+                            Terry in concert with his fellow collegues captures the elusive title,
                             claiming their dominance in the robotics world. Terry was the programmer which he built
-                            autonomous routines and progrommed the remote controller for driving capabilities.</p>
+                            autonomous routines and progrommed the remote controller for driving capabilities.
+                        </p>
                         <a href="https://www.prweb.com/releases/2016/04/prweb13368865.htm" class="btn btn-primary">Read
                             More</a>
                     </summary>
@@ -62,10 +70,12 @@
                         alt="Terry and Jeff teaches middle school students">
                     <summary class="card-body">
                         <h5 class="card-title">Integrated STEM Education Conference (ISEC), IEEE</h5>
-                        <p class="card-text">Terry joined the 2014 ISEC to discuss the mentorship role that he has
+                        <p class="card-text">
+                            Terry joined the 2014 ISEC to discuss the mentorship role that he has
                             played with his collegues and his professor. Teaching young children the joys of robotics.
                             It is the pursuit of having more children in the STEM field. Check out the paper using the
-                            button below.</p>
+                            button below.
+                        </p>
                         <a href="https://ieeexplore.ieee.org/abstract/document/6891023" class="btn btn-primary">Read
                             Now!</a>
                     </summary>
@@ -77,15 +87,30 @@
                     <img class="card-img-top" src="./Assets/IMGs/BELDAYPARTY11.png" alt="BEL Day Party">
                     <summary class="card-body">
                         <h5 class="card-title">BEL initiative hosts Day Party</h5>
-                        <p class="card-text">In conjunction with the Georgia Haitian-American Chamber of Commerce, Terry created a flyer for their initiative called BEL. Using photoshop, this flyer was designed and approved for posting. The event was a success.</p>
-                        <!-- <a href="https://ieeexplore.ieee.org/abstract/document/6891023" class="btn btn-primary">Read
-                            Now!</a> -->
+                        <p class="card-text">
+                            In conjunction with the Georgia Haitian-American Chamber of Commerce, Terry
+                            created a flyer for their initiative called BEL. Using photoshop, this flyer was designed
+                            and approved for posting. The event was a success.
+                        </p>
                     </summary>
                 </section>
             </section>
         </section>
     </main>
 
+    <!-- sticky footer section -->
+    <footer class="footer">
+        <section class="container">
+            <summary class="col-md-12">
+                <!-- copyright and other information -->
+                <p>
+                    Copyright &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script> All Rights Reserved. | Designed by <strong><em>DEV-T</em></strong>
+                </p>
+            </summary>
+        </section>
+    </footer>
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 

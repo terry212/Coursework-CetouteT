@@ -37,15 +37,59 @@
     </nav>
     <!-- End Nav -->
 
-    <p>Contact Us</p>
+    <!-- page title -->
+    <section class="pageTitle">
+        <h3>Contact Me</h3>
+    </section class="pageTitle">
+
+    <!-- contact form goes here -->
+    <form class="container">
+        <section class="row">
+            <section class="col-md-6">
+                <section class="form-group">
+                    <label for="contactFormControlInput1">First Name</label>
+                    <input type="text" class="form-control" id="contactFormControlInput1" placeholder="John">
+                </section>
+            </section>
+            <section class="col-md-6">
+                <section class="form-group">
+                    <label for="contactFormControlInput2">Last Name</label>
+                    <input type="text" class="form-control" id="contactFormControlInput2" placeholder="Doe">
+                </section>
+            </section>
+        </section>
+        <section class="form-group">
+            <label for="contactFormControlInput3">Email address</label>
+            <input type="email" class="form-control" id="contactFormControlInput3" placeholder="name@example.com">
+        </section>
+        <section>
+            <label for="contactFormControlInput4">Message</label>
+            <textarea class="form-control" id="contactFormControlTextarea1" rows="3"></textarea>
+        </section>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+
+    <!-- sticky footer section -->
+    <footer class="footer">
+        <section class="container">
+            <summary class="col-md-12">
+                <!-- copyright and other information -->
+                <p>
+                    Copyright &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script> All Rights Reserved. | Designed by <strong><em>DEV-T</em></strong>
+                </p>
+            </summary>
+        </section>
+    </footer>
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
