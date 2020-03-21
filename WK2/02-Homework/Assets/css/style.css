@@ -46,6 +46,10 @@ img.img-thumbnail {
     font-size: 70%;
 }
 
+.footer::marker {
+    display: none;
+}
+
 .container-fluid {
     /* width: 100%;
     padding-right: 15px;
