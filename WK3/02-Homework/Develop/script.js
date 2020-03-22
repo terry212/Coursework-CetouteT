@@ -1,17 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// min/max (mm) validation of user input
+// create a function to run the all the conditions before allowing a password to be generated
 
-
-// Prompt for password criteria 
-// User defined criteria or auto criteria
-// creation of the generate password function
-
-generateBtn.addEventListener("click", function generatePassword() {
-  // WHEN prompted for password criteria
-  // THEN I select which criteria to include in the password
+function passwordUserCriteriaCheck() {
+  // Prompt for password criteria
   var pwCriteria = confirm("Please select password criteria");
-  if (pwCriteria) {
+  while (pwCriteria) {
     // prompt for password length; min = 8, max = 128
     var pwLength = prompt("Please enter a character length between 8 and 128 characters.")
     if (pwLength > 8 && pwLength < 128) {
@@ -19,50 +13,53 @@ generateBtn.addEventListener("click", function generatePassword() {
     } else {
       alert("Invalid Entry. Please try again using a length between 8 and 128  characters.");
       var pwLengthValidation = false;
+      pwCriteria = true;
+    }
+
+    if (pwCriteria == false) {
+      alert("You must click OK to proceed foward! Please click Generate Password and try again.");
       return;
     }
-  } else {
-    alert("You must click OK to proceed foward! Please click Generate Password and try again.");
-    return;
+
+    if (pwLengthValidation == true) {
+      // prompt for character types
+      // lowercase, uppercase, numeric, and/or special characters
+      var charTypes = ["lowercase", "uppercase", "numeric", "special characters"];
+      var pwCharType = prompt("select one or more charater type. Choose 1: lowercase 2: uppercase 3: numeric 4: special characters")
+  break;
+    } else {
+  return;
+    }
   }
+  } 
+  //   WHEN prompted for character types to include in the password
+  // THEN I choose lowercase, uppercase, numeric, and/or special characters
+  
 
-//   WHEN prompted for character types to include in the password
-// THEN I choose lowercase, uppercase, numeric, and/or special characters
-  if (pwLengthValidation == true) {
-var charTypes = ["lowercase", "uppercase", "numeric", "special characters"];
-    
-  } else {
-    
-  }
-
-});
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+function generatePassword() {
+  
 }
+// creation of the generate password function
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword());
 
+    // Write password to the #password input
+    function writePassword() {
+      passwordUserCriteriaCheck();
+      var password = generatePassword();
+      var passwordText = document.querySelector("#password");
 
+      passwordText.value = password;
+    }
 
-
-
-
-
-
-// prompt for character types
-// lowercase, uppercase, numeric, and/or special characters
-
-
-
-// validation & required field set
-
-// generate password
+    // Add event listener to generate button
+    generateBtn.addEventListener("click", writePassword);
 
 
-// send alert or write to page
+
+    // validation & required field set
+
+    // generate password
+
+
+    // send alert or write to page
